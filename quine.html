@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<lang en>
+<head>
+    <title> HTML Quine Source Code Structure: </title>
+    <style>
+        *{ 
+            display: block;
+            font-family: monospaced;
+        }
+
+        html:before {
+            content: '<html>'
+        }
+
+        head:before {
+            content: '<head>'
+        }
+
+            title:before {
+                content: '<title>'
+            }
+
+            title:after {
+                content: '</title>'
+            }
+
+            style:before {
+                content: '<style>'
+            }
+
+            style:after {
+                content: '<\/style>'
+            }
+
+            style {
+                white-space: pre-wrap;
+            }
+
+        head:after {
+            content: '</head>'
+        }
+
+        body:before {
+            content: '<body>'
+        }
+
+            header:before {
+                content: '<header>'
+            }
+
+                h1:before {
+                    content: '<h1>'
+                }
+
+                h1:after {
+                    content: '</h1>'
+                }
+
+                p:before {
+                    content: '<p>'
+                }
+
+                p:after {
+                    content: '</p>'
+                }
+
+            header:after {
+                content: '</header>'
+            }
+
+            section:before {
+                content: '<section>'
+            }
+
+                h2:before {
+                    content: '<h2>'
+                }
+
+                h2:after {
+                    content: '</h2>'
+                }
+
+                p:before {
+                    content: '<p>'
+                }
+
+                p:after {
+                    content: '</p>'
+                }
+
+                a:before {
+                    content: '<a>'
+                }
+
+                a:after {
+                    content: '</a>'
+                }
+
+            section:after {
+                content: '</section>'
+            }
+
+            aside:before {
+                content: '<aside>'
+            }
+
+                p:before {
+                    content: '<p>'
+                }
+
+                p:after {
+                    content: '</p>'
+                }
+
+                p:before {
+                    content: '<p>'
+                }
+
+                p:after {
+                    content: '</p>'
+                }
+
+            aside:after {
+                content: '</aside>'
+            }
+
+            details:before {
+                content: '<details>'
+            }
+
+                p:before {
+                    content: '<p>'
+                }
+
+                p:after {
+                    content: '</p>'
+                }
+
+                summary:before {
+                    content: '<summary>'
+                }
+
+                summary:after {
+                    content: '</summary>'
+                }
+
+            details:after {
+                content: '</details>'
+            }
+
+            footer:before {
+                content: '<footer>'
+            }
+
+            footer: after {
+                content: '</footer>'
+            }
+
+        body:after {
+            content: '</body>'
+        }
+
+        html:after {
+            content: '</html>'
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Quine</h1>
+        <p>This HTML code displays its own source code in the browser.</p>
+    </header>
+    <section>
+        <h2>Inspiration:</h2>
+        <p>The following quine code has been inspired from the Leon Bambrick's brutalist HTML quine on github</p>
+        <a href='https://github.com/secretGeek/html_wysiwyg'> This is the link to the repo of the code </a>
+    </section>
+    <aside>
+        <p>Since HTML is a document oriented language we can not use it to show the source code</p>
+        <p>We for that purpose use CSS to style the code on the screen</p>
+    </aside>
+    <details>
+        <p>See the details of the methods used for this code</p>
+        <summary>The implementation is based soley on HTML and CSS</summary>
+    </details>
+    <footer>
+        @No Copyrights whatsoever! This code was implemented just for fun purposes!
+    </footer>
+</body>
+</html>
